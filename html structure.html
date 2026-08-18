@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#" class="logo">Aman.dev</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-ball"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main-layout container">
+    <section class="hero section" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Frontend Developer / Creative Coder</p>
+        <h1>Building immersive, responsive web experiences with modern CSS.</h1>
+        <p class="hero-text">
+          I create visually rich, high-performance interfaces using semantic HTML,
+          CSS Grid, Flexbox, and interactive UI systems.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Hire Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <h3>UI Systems</h3>
+          <p>Grid + Flexbox</p>
+        </div>
+        <div class="floating-card card-2">
+          <h3>Responsive</h3>
+          <p>Mobile-first layout</p>
+        </div>
+        <div class="floating-card card-3">
+          <h3>Creative</h3>
+          <p>3D interactions</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Designing elegant interfaces with depth and clarity.</h2>
+      </div>
+      <div class="glass-panel">
+        <p>
+          I focus on crafting responsive portfolio and product interfaces that feel
+          modern, polished, and engaging across every screen size.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Core technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">HTML5</article>
+        <article class="skill-card">CSS3</article>
+        <article class="skill-card">JavaScript</article>
+        <article class="skill-card">Responsive Design</article>
+        <article class="skill-card">CSS Grid</article>
+        <article class="skill-card">Flexbox</article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Featured work</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-content">
+            <h3>3D Portfolio Concept</h3>
+            <p>Immersive interface with layered cards, glassmorphism, and dynamic theme support.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3>Responsive Dashboard</h3>
+            <p>Grid-driven layout built with component-based spacing and modern UI patterns.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3>Creative Landing Page</h3>
+            <p>Animated sections, flexible content blocks, and accessible interactions.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something memorable.</h2>
+      </div>
+      <div class="glass-panel">
+        <p>Email: yourname@email.com</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    toggle.addEventListener('click', () => {
+      const currentTheme = root.getAttribute('data-theme');
+      root.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
